@@ -50,16 +50,17 @@
         calc = new Vue({
             el: "#calc",
             data: {
-                expr: ""
+                expr: "",
             }
         })
 
         function keyPress(caracter) {
             switch (caracter) {
               case '=':
-                if(calc.epr == "6+9"){
-                  calc.expr = "N.K Sz";
-                  return;
+                if(calc.expr == "6+9"){
+                    console.log("entrou comp");
+                    calc.expr = "N.K Sz";
+                    break;
                 }
                 calc.expr = eval(calc.expr);
                 break;
