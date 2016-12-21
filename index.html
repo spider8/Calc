@@ -51,32 +51,45 @@
             el: "#calc",
             data: {
                 expr: "",
+                isOp: false
             }
         })
 
         function keyPress(caracter) {
             switch (caracter) {
-              case '=':
-                if(calc.expr == "6+9"){
-                    console.log("entrou comp");
-                    calc.expr = "N.K Sz";
+                case '=':
+                    if (calc.expr == "6+9") {
+                        console.log("entrou comp");
+                        calc.expr = "N.K Sz";
+                        break;
+                    }
+                    calc.expr = eval(calc.expr);
                     break;
-                }
-                calc.expr = eval(calc.expr);
-                break;
-              case 'C':
-                calc.expr = "";
-                break;
-              default:
-                calc.expr += caracter;
+                case 'C':
+                    calc.expr = "";
+                    break;
+
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                    if (calc.isOp)
+                        break;
+                    calc.expr += caracter;
+                    calc.isOp = true;
+                    break;
+
+                default:
+                    calc.expr += caracter;
+                    calc.isOp = false;
             }
         }
 
         buttons = document.getElementsByClassName('key');
-        for(let b in buttons){
-          buttons[b].onclick = function(){
-            keyPress(buttons[b].innerText);
-          }
+        for (let b in buttons) {
+            buttons[b].onclick = function() {
+                keyPress(buttons[b].innerText);
+            }
         }
     </script>
 </body>
