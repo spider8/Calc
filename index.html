@@ -57,6 +57,10 @@
         function keyPress(caracter) {
             switch (caracter) {
               case '=':
+                if(calc.epr == "6+9"){
+                  calc.expr = "N.K Sz";
+                  return;
+                }
                 calc.expr = eval(calc.expr);
                 break;
               case 'C':
@@ -64,9 +68,7 @@
                 break;
               default:
                 calc.expr += caracter;
-
             }
-            console.log("press key");
         }
 
         buttons = document.getElementsByClassName('key');
