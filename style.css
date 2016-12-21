@@ -1,0 +1,65 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+}
+
+#calc {
+    position: relative;
+    left: 25%;
+    top: 15%;
+    width: 300px;
+    height: 400px;
+}
+
+.screen {
+    text-align: right;
+    border: none;
+    background-color: #73DAEB;
+    width: 100%;
+    height: 33%;
+    font-size: 300%;
+    color: #666666;
+    resize: none;
+}
+
+.keyboard {
+    width: 100%;
+    height: 66%;
+}
+
+.numericKey {
+    text-align: center;
+    background-color: #4C4C4C;
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+}
+
+.operationKey {
+    text-align: center;
+    float: right;
+    background-color: #666666;
+    width: 25%;
+    height: 100%;
+}
+
+.key {
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+.num {
+    width: 30%;
+    background-color: #4C4C4C;
+    font-size: 200%;
+}
+
+.op {
+    background-color: #666666;
+    font-size:150%;
+}
