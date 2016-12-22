@@ -5,8 +5,6 @@
 html {
     width: 100%;
     height: 100%;
-    background: white;
-    background: radial-gradient(circle, #fff 20%, #ccc);
 }
 
 body {
@@ -16,16 +14,14 @@ body {
 }
 
 #calc {
-    displ
     width: inherit;
     height: inherit;
-    margin: 0;
 }
 
 .screen {
     display: block;
     text-align: right;
-    border: none;
+    padding: 0;
     background-color: #73DAEB;
     width: 100%;
     height: 33%;
@@ -35,7 +31,6 @@ body {
 }
 
 .keyboard {
-    display: inline-block;
     width: 100%;
     height: 66%;
 }
@@ -59,19 +54,19 @@ body {
 .key {
     text-align: center;
     color: white;
-    border: none;
+    border: 0;
 }
 
 .num {
-    width: 55px;
-    height: 55px;
-    background-color: #4C4C4C;
+    width: 65px;
+    height: 65px;
     font-size: 200%;
+    background-color: #4C4C4C;
 }
 
 .op {
-    background-color: #666666;
     font-size: 150%;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 48px;
+    background-color: #666666;
 }
