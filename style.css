@@ -7,12 +7,18 @@ html {
     background: radial-gradient(circle, #fff 20%, #ccc);
 }
 
-#calc {
-    position: relative;
-    left: 25%;
-    top: 15%;
-    width: 300px;
-    height: 400px;
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.num {
+    width: 30%;
+    background-color: #4C4C4C;
+}
+
+.op {
+    background-color: #666666;
 }
 
 .screen {
@@ -53,13 +59,32 @@ html {
     border: none;
 }
 
-.num {
-    width: 30%;
-    background-color: #4C4C4C;
-    font-size: 200%;
+@media screen {
+    #calc {
+        position: relative;
+        left: 25%;
+        top: 15%;
+        width: 300px;
+        height: 400px;
+    }
+    .num {
+        font-size: 210%;
+    }
+    .op {
+        font-size: 160%;
+    }
 }
 
-.op {
-    background-color: #666666;
-    font-size:150%;
+@media (min-widgth: 320px) {
+    #calc {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .num {
+        font-size: 200%;
+    }
+    .op {
+        font-size: 150%;
+    }
 }
