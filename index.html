@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Calculadora</title>
 </head>
@@ -59,11 +59,6 @@
         function keyPress(caracter) {
             switch (caracter) {
                 case '=':
-                    if (calc.expr == "6+9") {
-                        console.log("entrou comp");
-                        calc.expr = "N.K Sz";
-                        break;
-                    }
                     calc.expr = eval(calc.expr);
                     break;
                 case 'C':
@@ -75,6 +70,8 @@
                 case '*':
                 case '/':
                     if (calc.isOp)
+                        break;
+                    if (calc.expr == "" && caracter != '-')
                         break;
                     calc.expr += caracter;
                     calc.isOp = true;
