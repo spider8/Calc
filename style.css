@@ -1,10 +1,11 @@
 * {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -14,14 +15,13 @@ body {
 }
 
 #calc {
-    width: inherit;
-    height: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .screen {
     display: block;
     text-align: right;
-    padding: 0;
     background-color: #73DAEB;
     width: 100%;
     height: 33%;
@@ -56,18 +56,19 @@ body {
     text-align: center;
     color: white;
     border: 0;
+    padding: 0;
 }
 
 .num {
-    width: 65px;
-    height: 65px;
+    width: 32%;
+    height: 25%;
     font-size: 200%;
     background-color: #4C4C4C;
 }
 
 .op {
     font-size: 150%;
-    width: 70px;
-    height: 48px;
+    width: 100%;
+    height: 20%;
     background-color: #666666;
 }

@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#73DAEB"/>
+    <meta name="theme-color" content="#73DAEB" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Calculadora</title>
+    <title>Calc</title>
 </head>
 
 <body>
@@ -16,23 +16,17 @@
         <textarea type="text" v-model="expr" class="screen"></textarea>
         <div class=keyboard>
             <div class='numericKey'>
-                <p>
-                    <button type="button" class="key num">7</button>
-                    <button type="button" class="key num">8</button>
-                    <button type="button" class="key num">9</button>
-                </p>
+                <button type="button" class="key num">7</button>
+                <button type="button" class="key num">8</button>
+                <button type="button" class="key num">9</button>
 
-                <p>
-                    <button type="button" class="key num">4</button>
-                    <button type="button" class="key num">5</button>
-                    <button type="button" class="key num">6</button>
-                </p>
+                <button type="button" class="key num">4</button>
+                <button type="button" class="key num">5</button>
+                <button type="button" class="key num">6</button>
 
-                <p>
-                    <button type="button" class="key num">1</button>
-                    <button type="button" class="key num">2</button>
-                    <button type="button" class="key num">3</button>
-                </p>
+                <button type="button" class="key num">1</button>
+                <button type="button" class="key num">2</button>
+                <button type="button" class="key num">3</button>
 
                 <button type="button" class="key num">.</button>
                 <button type="button" class="key num">0</button>
@@ -40,11 +34,11 @@
             </div>
 
             <div class="operationKey">
-                <p><button type="button" class='key op'>C</button></p>
-                <p><button type="button" class='key op'>/</button></p>
-                <p><button type="button" class='key op'>*</button></p>
-                <p><button type="button" class='key op'>-</button></p>
-                <p><button type="button" class='key op'>+</button></p>
+                <button type="button" class='key op'>C</button>
+                <button type="button" class='key op'>/</button>
+                <button type="button" class='key op'>*</button>
+                <button type="button" class='key op'>-</button>
+                <button type="button" class='key op'>+</button>
             </div>
         </div>
     </div>
